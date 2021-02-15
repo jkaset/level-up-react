@@ -59,7 +59,6 @@ export const EventForm = (props) => {
                 </div>
             </fieldset>
 
-            {/* Create the rest of the input fields */}
 
             <button type="submit"
                 onClick={evt => {
