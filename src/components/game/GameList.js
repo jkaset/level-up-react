@@ -9,6 +9,7 @@ export const GameList = (props) => {
     }, [])
 
     return (
+      <>
         <article className="games">
             {
                 games.map(game => {
@@ -19,6 +20,16 @@ export const GameList = (props) => {
                     </section>
                 })
             }
+
+        
         </article>
+        <button className="btn btn-2 btn-sep icon-create"
+        onClick={() => {
+            props.history.push({ pathname: "/games/new" })
+        }}
+        >Register New Game</button>
+        </>
+
+
     )
 }
