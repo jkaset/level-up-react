@@ -30,6 +30,7 @@ export const EventList = (props) => {
 
                         <div>{event.description}</div>
                         <div>Where? {event.location}</div>
+                        
 
 
                         <div>When? {
@@ -48,12 +49,10 @@ export const EventList = (props) => {
                             event.joined
                                 ? <button className="btn btn-3"
                                     onClick={() => {
-                                        // console.log("leave",event)
                                         leaveEvent(event.id).then(setToggle)}}
                                     >Leave</button>
                                 : <button className="btn btn-2"
                                     onClick={() => {
-                                        // console.log("join",event)
                                         joinEvent(event.id).then(setToggle)}}
                                     >Join</button>
                         }
